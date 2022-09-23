@@ -1,0 +1,5 @@
+name: "Check File Actions"
+description: "Check for core file"
+runs :
+    using: node12
+    main: index.js
