@@ -1,5 +1,5 @@
 name: "Check File Actions"
-description: "Check for core file"
+description: "Check for important files"
 runs :
-    using: node12
+    using: node16
     main: index.js
