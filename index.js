@@ -6,7 +6,6 @@ const github = require('@actions/github');
         try {
             core.notice("Calling Custom Action");
             core.info("Hello World from Custom Action");
-            core.error("Halting")
         } catch (error){
             core.setFailed("Custom Action Failed");
         }
