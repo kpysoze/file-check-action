@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-{
+(
     async () => {
         try {
             core.notice("Calling Custom Action");
@@ -11,4 +11,4 @@ const github = require('@actions/github');
             core.setFailed("Custom Action Failed");
         }
     }
-}
+)();
