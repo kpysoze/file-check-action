@@ -14,13 +14,12 @@ const github = require('@actions/github');
             //core.info(myMap.has("key1"))
             //core.info(myMap.has("key3"))
 			
-			let dummydoll = new Map<string, string>();
-			dummydoll.set("one", "pending");
-			dummydoll.set("two", "pending");
-			dummydoll.set("three", "pending");
+	   let scores = new Map<string, number>();
+           scores.set("bill", 10);
+           scores.set("bob", "10");
 			
-			core.info(dummydoll.has("one"))
-            core.info(dummydoll.has("four"))
+	   //core.info(dummydoll.has("one"))
+           //core.info(dummydoll.has("four"))
             
         } catch (error){
             core.setFailed("Custom Action Failed");
