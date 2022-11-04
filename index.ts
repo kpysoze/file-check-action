@@ -12,8 +12,8 @@ const github = require('@actions/github');
 		    myMap.set(value, 'pending')
 	    });
 	    
-	    myMap.forEach((key: string, value: string) => {
-    		core.info(key, value);
+	    myMap.forEach((value, key) => {
+		    core.info(key + ' ---- ' + value)
 	    });
 	    
 	    //core.info([...myMap.entries()])
