@@ -12,13 +12,14 @@ const github = require('@actions/github');
 		    myMap.set(value, 'pending')
 	    });
 	    
+	    core.info(myMap)
 	    //let num = [7, 8, 9];
             //num.forEach((value) => {
             //core.info(value);
             //});
 
-            core.info(myMap.has('one'))
-            core.info(myMap.has('four'))
+            //core.info(myMap.has('one'))
+            //core.info(myMap.has('four'))
 
     }
 )();
