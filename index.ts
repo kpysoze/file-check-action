@@ -3,7 +3,6 @@ const github = require('@actions/github');
 
 (
     async () => {
-        try {
             core.notice("Calling Custom Action");
             core.info("Hello World from Custom Action");
             
@@ -13,12 +12,6 @@ const github = require('@actions/github');
             ]);
             core.info(myMap.has("key1"))
             core.info(myMap.has("key3"))
-			
-	   core.info(dummydoll.has("one"))
-           core.info(dummydoll.has("four"))
-            
-        } catch (error){
-            core.setFailed("Custom Action Failed");
-        }
+
     }
 )();
