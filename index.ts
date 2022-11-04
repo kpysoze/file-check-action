@@ -13,7 +13,7 @@ const github = require('@actions/github');
 	    });
 	    
 	    myMap.forEach((value, key) => {
-		    if(key === 'one') continue;
+		    if(key === 'one') return;
 		    core.info(key + ' ---- ' + value);
 	    });
 	    
