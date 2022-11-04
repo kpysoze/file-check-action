@@ -14,7 +14,7 @@ const github = require('@actions/github');
             //core.info(myMap.has("key1"))
             //core.info(myMap.has("key3"))
 			
-	    type MapType = { 
+	    let MapType = { 
     			[id: string]: string; 
 		}
 
