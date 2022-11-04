@@ -14,9 +14,13 @@ const github = require('@actions/github');
             //core.info(myMap.has("key1"))
             //core.info(myMap.has("key3"))
 			
-	   let scores = new Map<string, number>();
-           scores.set("bill", 10);
-           scores.set("bob", "10");
+	    type MapType = { 
+    			[id: string]: string; 
+		}
+
+		const map: MapType = {};
+		map['key1'] = '1';
+  		map['key2'] = '2';
 			
 	   //core.info(dummydoll.has("one"))
            //core.info(dummydoll.has("four"))
