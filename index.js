@@ -7,10 +7,12 @@ const github = require('@actions/github');
             core.notice("Calling Custom Action");
             core.info("Hello World from Custom Action");
             
-            let dictionary = new Map<string, string>();
-            dictionary.set("one", "pending");
-            dictionary.set("two", "pending");
-            dictionary.set("three", "pending");
+            const myMap = new Map([
+                ["key1", "value1"],
+                ["key2", "value2"]
+            ]);
+            core.info(myMap.has("key1"))
+            core.info(myMap.has("key3"))
 
             
         } catch (error){
