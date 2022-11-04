@@ -14,7 +14,7 @@ const github = require('@actions/github');
             //core.info(myMap.has("key1"))
             //core.info(myMap.has("key3"))
 			
-			let dummydoll = new Map{string, string}();
+			let dummydoll = new Map<string, string>();
 			dummydoll.set("one", "pending");
 			dummydoll.set("two", "pending");
 			dummydoll.set("three", "pending");
