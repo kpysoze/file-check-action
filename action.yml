@@ -2,4 +2,4 @@ name: "Check File Actions"
 description: "Check for important files"
 runs :
     using: node16
-    main: index.js
+    main: index.ts
