@@ -6,11 +6,16 @@ const github = require('@actions/github');
             core.notice("Calling Custom Action");
             core.info("Hello World from Custom Action");
             
-            let tempCheckName = ['one', 'two', 'three']
-            let myMap = new Map()
-            for name in tempCheckName{
-	            myMap.set(name, "pending")
-            }
+            //let tempCheckName = ['one', 'two', 'three']
+            //let myMap = new Map()
+            //for name in tempCheckName{
+	    //        myMap.set(name, "pending")
+            //}
+	    
+	    let num = [7, 8, 9];
+            num.forEach((value) => {
+            core.info(value);
+            });
 
             core.info(myMap.has("one"))
             core.info(myMap.has("four"))
